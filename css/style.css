@@ -54,11 +54,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-a {
+.navlink {
     color: blue;
 }
 
-a:hover {
+.navlink:hover {
     background-color: #165e34;
     color: rgb(142, 142, 255);
 }
