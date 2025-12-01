@@ -9,6 +9,7 @@ body::-webkit-scrollbar {
 
 .font {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #00241B;
 }
 
 /* nav box  */
@@ -32,8 +33,8 @@ body::-webkit-scrollbar {
 
 
 
-.headertext{
-    font-size: 24px;
+.icon{
+    width: 100px;
     margin: 10px;
 }
 
