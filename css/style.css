@@ -1,12 +1,17 @@
-#indexcontainer {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 8% 1fr;
-    grid-template-areas: 
-    "hd"
-    "mn"
+html, body {
+    padding: 0;
+    margin: 0;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.font {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* nav box  */
 
 .header {
     display: flex;
@@ -15,6 +20,42 @@
     align-items: center;
     grid-area: hd;
     background-color: #239251;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
+.headertext{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.navlink {
+    color: blue;
+}
+
+.navlink:hover {
+    background-color: #165e34;
+    color: rgb(142, 142, 255);
+}
+
+
+/* index sida  */
+#indexcontainer {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 1fr;
+    grid-template-areas: 
+    "hd"
+    "mn"
 }
 
 #indexmain {
@@ -26,39 +67,46 @@
     background-color: #2ecc71;
 }
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    margin: 10px;
-}
-
-.font {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.headertext{
-    font-size: 24px;
-    margin: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 #welcome {
     font-size: 135px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #welcometext {
     font-size: 24px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.navlink {
-    color: blue;
+
+/* About sida */
+#aboutcontainer {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 8% 1fr;
+    grid-template-areas: 
+    "hd hd hd"
+    "asl mn asr"
 }
 
-.navlink:hover {
-    background-color: #165e34;
-    color: rgb(142, 142, 255);
+#aboutmain {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    grid-area: mn;
+    background-color: #2ecc71;
+}
+
+#asideleft {
+    display: flex;
+    flex-direction: column;
+    grid-area: asl;
+    background-color: aqua;
+}
+
+#asideright {
+    display: flex;
+    flex-direction: column;
+    grid-area: asr;
+}
+
+.abouttext {
+    align-self: center;
 }
