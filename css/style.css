@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: flex-end;
     gap: 15px;
-    font-size: 20px;
+    font-size: 1rem;
     margin: 10px;
 }
 
@@ -69,10 +69,10 @@ body::-webkit-scrollbar {
 }
 
 #welcome {
-    font-size: 135px;
+    font-size: 9rem;
 }
 #welcometext {
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 
