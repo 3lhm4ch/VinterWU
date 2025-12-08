@@ -116,3 +116,25 @@ body::-webkit-scrollbar {
 .abouttext {
     align-self: center;
 }
+
+
+/*Annons sida*/
+#annonscontainer{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 1fr;
+    grid-template-areas: 
+    "hd"
+    "main";
+}
+
+#annonsheader {
+    grid-area: hd;
+}
+
+#annonsmain {
+    display: flex;
+    grid-area: main;
+    justify-content: space-evenly;
+}
