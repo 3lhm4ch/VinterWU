@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     grid-area: asl;
-    background-color: aqua;
+    background-color: #a4ffca;
 }
 
 #asideright {
@@ -137,4 +137,38 @@ body::-webkit-scrollbar {
     display: flex;
     grid-area: main;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #2ecc71;
+}
+
+#sec1 {
+    background-color: #a4ffca;
+}
+#sec2 {
+    background-color: #a4ffca;
+}
+#sec3 {
+    background-color: #a4ffca;
+}
+#sec4 {
+    background-color: #a4ffca;
+}
+#sec5 {
+    background-color: #a4ffca;
+}
+#sec6 {
+    background-color: #a4ffca;
+}
+#sec7 {
+    background-color: #a4ffca;
+}
+#sec8 {
+    background-color: #a4ffca;
+}
+
+.size {
+    flex-basis: 200px;
+    height: 300px;
+    margin: 60px;
+    text-align: center;
 }
